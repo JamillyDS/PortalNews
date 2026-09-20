@@ -4,29 +4,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./public/icon.png">
-    <title>PortalNews</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 
 <body>
 
-    <header class="container-cabe">
+    <header class="container-head">
 
-        <div class="container-navigation">
-            <!-- <div class="menu-hamburguer">
-            fazer um menu hamburguer
-        </div> -->
+        <div class="informations-up">
 
-        <div class="logo-card">
-            <p class="logo">NoticiasPortal</p>
+            <div class="menu-hamburguer">
+                <button id="botao-menu" class="menu-ham" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars" style="color: #B588E7;"></i>
+                </button>
+
+                <nav id="menu-navegacao" class="menu oculto">
+                    <ul>
+                        <li><a href="#">inicio</a></li>
+                        <li><a href="#">inicio</a></li>
+                        <li><a href="#">inicio</a></li>
+                        <li><a href="#">inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h1 class="title">PotalNews</h1>
+
+            <div class="card-input">
+                <input type="text" name="pesquisa" id="pesquisar" placeholder="Pesquisar">
+
+                <button type="submit" class="btn" id="submitBtn"><i class="fa-solid fa-magnifying-glass"
+                        style="color: #B588E7;"></i></button>
+            </div>
+
         </div>
 
-        <div class="barra-pesquisa"></div>
-        
+        <div class="informations-down">
+            <a href="#">Inicio</a>
+            <a href="#">Ciência</a>
+            <a href="#">Agro</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Saúde</a>
+            <a href="#">Economia</a>
+            <a href="#">Educação</a>
+            <a href="#">Eleições</a>
+            <a href="#">Empreendedorismo</a>
         </div>
+
 
     </header>
+
+    <main class="container-body">
+
+        <section class="home-content">
+
+            <div class="card-esquerdo">
+                <img src="" alt="">
+
+                <div class="texts">
+                    <h2>Titulo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed, quasi ipsa recusandae
+                        voluptas temporibus asperiores perspiciatis! Modi ducimus sint omnis unde itaque odit numquam
+                        optio rem aliquid, odio soluta</p>
+                </div>
+            </div>
+
+            <div class="cards-direto">
+
+                <div class="ca">
+                    <img src="" alt="">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quidem fugit ipsa id illo
+                        asperiores atque corporis omnis, voluptates aspernatur perspiciatis possimus molestias iste odio
+                        a neque pariatur eveniet quo?</p>
+                </div>
+
+                <div class="ca">
+                    <img src="" alt="">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quidem fugit ipsa id illo
+                        asperiores atque corporis omnis, voluptates aspernatur perspiciatis possimus molestias iste odio
+                        a neque pariatur eveniet quo?</p>
+                </div>
+
+                <div class="ca">
+                    <img src="" alt="">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quidem fugit ipsa id illo
+                        asperiores atque corporis omnis, voluptates aspernatur perspiciatis possimus molestias iste odio
+                        a neque pariatur eveniet quo?</p>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+        </section>
+
+        <div class="publi"></div>
+
+        <section class="container-info-1">
+
+            <div class="info-card">
+                <div class="text-info">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem a, amet asperiores delectus
+                        aut consectetur eligendi deserunt saepe dolorem! Illo, reiciendis omnis. Soluta nam praesentium
+                        cum numquam, modi quod voluptates.</p>
+                    <button class="btn saiba-mais">Saiba-mais</button>
+                </div>
+
+                <div class="info-card-small">
+                    <img src="" alt="">
+
+                    <div class="text-info-small">
+                        <h3>titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae mollitia, officia
+                            officiis, assumenda at laborum dicta rem unde corporis sit in dolore exercitationem.
+                            Accusamus repellendus dolore pariatur sint maxime?</p>
+                    </div>
+
+                    <button class="maisBtn">Saiba Mais</button>
+                </div>
+
+                <div class="info-card-small">
+                    <img src="" alt="">
+
+                    <div class="text-info-small">
+                        <h3>titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae mollitia, officia
+                            officiis, assumenda at laborum dicta rem unde corporis sit in dolore exercitationem.
+                            Accusamus repellendus dolore pariatur sint maxime?</p>
+                    </div>
+
+                    <button class="maisBtn">Saiba Mais</button>
+                </div>
+
+                <div class="temp">
+                    <div class="nuvem">
+
+                    </div>
+
+                    <div class="info-temp">
+
+                    </div>
+                    <button class="maisBtn">Veja a Previsão Completa</button>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+        </section>
+
+        <section class="container-info-2">
+
+            <div class="grid">
+                <div class="info-card-small">
+                    <img src="" alt="">
+
+                    <div class="text-info-small">
+                        <h3>titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae mollitia, officia
+                            officiis, assumenda at laborum dicta rem unde corporis sit in dolore exercitationem.
+                            Accusamus repellendus dolore pariatur sint maxime?</p>
+                    </div>
+
+                    <button class="maisBtn">Saiba Mais</button>
+                </div>
+
+                <div class="info-card-small">
+                    <img src="" alt="">
+
+                    <div class="text-info-small">
+                        <h3>titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae mollitia, officia
+                            officiis, assumenda at laborum dicta rem unde corporis sit in dolore exercitationem.
+                            Accusamus repellendus dolore pariatur sint maxime?</p>
+                    </div>
+
+                    <button class="maisBtn">Saiba Mais</button>
+                </div>
+
+                <div class="info-card-small">
+                    <img src="" alt="">
+
+                    <div class="text-info-small">
+                        <h3>titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae mollitia, officia
+                            officiis, assumenda at laborum dicta rem unde corporis sit in dolore exercitationem.
+                            Accusamus repellendus dolore pariatur sint maxime?</p>
+                    </div>
+
+                    <button class="maisBtn">Saiba Mais</button>
+                </div>
+
+                <div class="info-card-small">
+                    <img src="" alt="">
+
+                    <div class="text-info-small">
+                        <h3>titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae mollitia, officia
+                            officiis, assumenda at laborum dicta rem unde corporis sit in dolore exercitationem.
+                            Accusamus repellendus dolore pariatur sint maxime?</p>
+                    </div>
+
+                    <button class="maisBtn">Saiba Mais</button>
+                </div>
+
+            </div>
+
+            <div class="publi"></div>
+
+            <div class="line"></div>
+
+        </section>
+
+        <section class="container-info-3">
+
+            <div class="info-1">
+                <img src="" alt="">
+
+                <div class="text-info">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quos praesentium est repellendus
+                        sint repellat eaque neque aperiam molestiae esse pariatur repudiandae, quasi unde! Repudiandae
+                        beatae maxime nostrum cumque omnis.</p>
+
+                    <button class="btnInfoM">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="card-info">
+                <div class="img"></div>
+                <h3>Titulo</h3>
+            </div>
+
+            <div class="card-info">
+                <div class="img"></div>
+                <h3>Titulo</h3>
+            </div>
+
+            <div class="card-info">
+                <div class="img"></div>
+                <h3>Titulo</h3>
+            </div>
+
+            <div class="card-info">
+                <div class="img"></div>
+                <h3>Titulo</h3>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="container-rodape">
+        <p>DevSakamoto</p>
+        <p>20/09/2026</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
