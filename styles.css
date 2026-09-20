@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --roxo: #b588e7;
+  --azulEscuro: #3e4a58;
+  --fontePrincipal: "ADLaM Display", system-ui;
+  --fonteSecundaria: "Open Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e7ead7;
+}
+
+.container-head {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azulEscuro);
+  font-family: var(--fontePrincipal);
+}
+
+.informations-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 2em;
+  font-size: 0.5rem;
+  gap: 12px;
+
+  .title {
+    margin: 0 2em;
+  }
+
+  .card-input {
+    display: none;
+  }
+}
+
+/* --- Estilos do Botão --- */
+.botao-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10; /* Garante que o botão fique acima do menu */
+  position: relative;
+}
+
+.icone-hamburguer line {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  transform-origin: center; /* Define o centro do traço para a rotação */
+}
+
+/* --- Estilos do Menu Lateral (Mobile) --- */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Esconde o menu totalmente para a direita */
+  width: 250px;
+  height: 100vh;
+  background-color: #111;
+  padding-top: 80px;
+  transition: right 0.4s ease; /* Animação suave de deslizar */
+}
+
+/* Quando o menu tiver a classe .ativo, ele aparece */
+.menu.ativo {
+  right: 0;
+}
+
+/* Estilização básica dos links do menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+
+.menu ul li a:hover {
+  background-color: #222;
+}
+
+/* --- Animação do Ícone (Hambúrguer vira X) --- */
+/* Quando o botão tiver a classe .ativo, transformamos as linhas */
+.botao-menu.ativo .linha-meio {
+  opacity: 0; /* Esconde a linha do meio */
+}
+
+.botao-menu.ativo .linha-cima {
+  transform: rotate(45deg) translate(0px, 0px); /* Gira a linha de cima */
+  /* Se o X desalinhar no seu projeto, ajuste os valores de translate se necessário */
+  transform: translateY(6px) rotate(45deg);
+}
+
+.botao-menu.ativo .linha-baixo {
+  transform: translateY(-6px) rotate(-45deg); /* Gira a linha de baixo */
+}
